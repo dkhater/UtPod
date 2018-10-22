@@ -1,0 +1,4 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/cmake-build-debug
