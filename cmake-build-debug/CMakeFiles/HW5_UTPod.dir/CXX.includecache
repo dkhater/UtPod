@@ -6,21 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/Song.h
-UtPod.h
-/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/UtPod.h
-
-/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/UtPod.h
-Song.h
-/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/Song.h
-
-/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/utPod_driver.cpp
+/Users/dkhater/Desktop/UtPod/UtPod/Song.cpp
 cstdlib
 -
 iostream
 -
 Song.h
-/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/Song.h
-UtPod.h
-/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/UtPod.h
+/Users/dkhater/Desktop/UtPod/UtPod/Song.h
+
+/Users/dkhater/Desktop/UtPod/UtPod/Song.h
+cstdlib
+-
+iostream
+-
+string
+-
 

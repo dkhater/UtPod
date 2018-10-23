@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod"
+CMAKE_SOURCE_DIR = /Users/dkhater/Desktop/UtPod/UtPod
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/cmake-build-debug"
+CMAKE_BINARY_DIR = /Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/cmake-build-debug/CMakeFiles" "/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/CMakeFiles /Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

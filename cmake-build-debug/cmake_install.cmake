@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod
+# Install script for directory: /Users/dkhater/Desktop/UtPod/UtPod
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

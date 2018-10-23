@@ -1,46 +1,45 @@
 #include <cstdlib>
 #include <iostream>
-#include "Song.h"
 #include "UtPod.h"
 
 using namespace std;
 
-UtPod(){
+
+
+UtPod::UtPod() {
     //allocate space as linked list node and set size to default 512 MB
 
 }
 
-UtPod(int size){
+UtPod::UtPod(int size) {
     //allocate space as linked list node and set size to parameter value
 
 }
 
-int addSong(Song const &s){
+int UtPod::addSong(Song const &s) {
 
 }
 
-int removeSong(Song const &s){
+int UtPod::removeSong(Song const &s) {
 
 }
 
-void shuffle(){
+void UtPod::shuffle() {
 
 }
 
-void showSongList(){
+void UtPod::showSongList() {
 
 }
 
-void sortSongList(){
+void UtPod::sortSongList() {
 
 }
 
-int getTotalMemory() {
-    return memSize;
-}
-
-int getRemainingMemory(){
+int UtPod::getRemainingMemory() {
 
 }
 
-~UtPod();
+UtPod::~UtPod(){
+
+}

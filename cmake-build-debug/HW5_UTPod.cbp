@@ -8,96 +8,96 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/cmake-build-debug"/>
+				<Option working_dir="/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/cmake-build-debug"/>
+				<Option working_dir="/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/cmake-build-debug"/>
+				<Option working_dir="/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="HW5_UTPod">
-				<Option output="/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/cmake-build-debug/HW5_UTPod" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/cmake-build-debug"/>
+				<Option output="/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/HW5_UTPod" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 HW5_UTPod"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 HW5_UTPod"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="HW5_UTPod/fast">
-				<Option output="/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/cmake-build-debug/HW5_UTPod" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/cmake-build-debug"/>
+				<Option output="/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/HW5_UTPod" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 HW5_UTPod/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Neha/Documents/UT/Fall\ 2018/EE\ 312/CLion\ Files/HW5_UTPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 HW5_UTPod/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/dkhater/Desktop/UtPod/UtPod/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/Song.cpp">
+		<Unit filename="/Users/dkhater/Desktop/UtPod/UtPod/Song.cpp">
 			<Option target="HW5_UTPod"/>
 		</Unit>
-		<Unit filename="/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/Song.h">
+		<Unit filename="/Users/dkhater/Desktop/UtPod/UtPod/Song.h">
 			<Option target="HW5_UTPod"/>
 		</Unit>
-		<Unit filename="/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/UtPod.cpp">
+		<Unit filename="/Users/dkhater/Desktop/UtPod/UtPod/UtPod.cpp">
 			<Option target="HW5_UTPod"/>
 		</Unit>
-		<Unit filename="/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/UtPod.h">
+		<Unit filename="/Users/dkhater/Desktop/UtPod/UtPod/UtPod.h">
 			<Option target="HW5_UTPod"/>
 		</Unit>
-		<Unit filename="/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/utPod_driver.cpp">
+		<Unit filename="/Users/dkhater/Desktop/UtPod/UtPod/utPod_driver.cpp">
 			<Option target="HW5_UTPod"/>
 		</Unit>
-		<Unit filename="/Users/Neha/Documents/UT/Fall 2018/EE 312/CLion Files/HW5_UTPod/CMakeLists.txt">
+		<Unit filename="/Users/dkhater/Desktop/UtPod/UtPod/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

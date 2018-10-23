@@ -17,25 +17,25 @@ using namespace std;
 
 #ifndef SONG_H
 #define SONG_H
-#include "UtPod.h"
 
 //Song class declaration
 class Song
 {
-private:
-    string artist;
-    string title;
-    int size;
+    private:
+        string artist;
+        string title;
+        int songSize;
 
 
-public:
-    Song();
-    void setArtist(string);
-    void setTitle(string);
-    void setSize(int);
-    string getArtist() const;
-    string getTitle() const;
-    int getSize() const;
+    public:
+        Song();
+        Song(string, string, int);
+        void setArtist(string);
+        void setTitle(string);
+        void setSize(int);
+        string getArtist() const;
+        string getTitle() const;
+        int getSize() const;
 
 };
 
