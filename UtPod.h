@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <iostream>
 
+
 using namespace std;
 
 #ifndef HW5_UTPOD_UTPOD_H
@@ -47,7 +48,7 @@ public:
     void sortSongList();
 
     int getTotalMemory() {
-        return memSize;
+        return MAX_MEMORY - memSize;    //We changed this
     }
 
     int getRemainingMemory();

@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/dkhater/Desktop/UtPod/UtPod/Song.cpp
-cstdlib
--
-iostream
--
-Song.h
-/Users/dkhater/Desktop/UtPod/UtPod/Song.h
-
 /Users/dkhater/Desktop/UtPod/UtPod/Song.h
 cstdlib
 -
@@ -21,4 +13,22 @@ iostream
 -
 string
 -
+
+/Users/dkhater/Desktop/UtPod/UtPod/UtPod.cpp
+cstdlib
+-
+iostream
+-
+Song.h
+/Users/dkhater/Desktop/UtPod/UtPod/Song.h
+UtPod.h
+/Users/dkhater/Desktop/UtPod/UtPod/UtPod.h
+
+/Users/dkhater/Desktop/UtPod/UtPod/UtPod.h
+cstdlib
+-
+iostream
+-
+Song.h
+/Users/dkhater/Desktop/UtPod/UtPod/Song.h
 

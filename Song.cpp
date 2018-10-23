@@ -8,25 +8,33 @@ Song::Song(){
 
 }
 
-Song::Song(string, string, int){
+Song::Song(string artistName, string songName, int sizeSong){
+    setArtist(artistName);
+    setTitle(songName);
+    setSize(sizeSong);
 
 }
-void Song::setArtist(string){
+void Song::setArtist(string artistName){
+    artist = artistName;
 
 }
-void Song::setTitle(string){
+void Song::setTitle(string titleName){
+    title = titleName;
 
 }
-void Song::setSize(int){
+void Song::setSize(int siz){
+    songSize = siz;
 
 }
 string Song::getArtist() const{
+    return artist;
 
 }
 string Song::getTitle() const{
+    return title;
 
 }
 int Song::getSize() const{
-    
+    return songSize;
 }
 
