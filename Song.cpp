@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Song::Song(){
+Song::Song(){       //what are we supposed to set here?
 
 }
 

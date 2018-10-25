@@ -47,11 +47,15 @@ public:
     void showSongList();
     void sortSongList();
 
-    int getTotalMemory() {
-        return MAX_MEMORY - memSize;    //We changed this
+    int getTotalMemory() {          // What is this supposed to do?
+        return memSize;
     }
 
     int getRemainingMemory();
+
+    int getCurrentMemory();
+
+    int getNumSongsInUtPod();
 
     ~UtPod();
 

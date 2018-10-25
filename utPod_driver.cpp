@@ -14,7 +14,7 @@ You will want to do more complete testing.
 
 */
 //~~~~~~~~~~~~~~~~~~~TO DO LIST~~~~~~~~~~~~~~~~~~~~~\\
-//write functions to shuffle and sort
+//write functions to sort
 //fix how we find current memory - traverse with linked list
 //need to make a test file
 
@@ -27,10 +27,10 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    UtPod t(512);
+    UtPod t;    // UtPod t(512)
 
     Song s1("Beatles", "Hey Jude1", 4);
-    s1.setTitle("New title");
+    //s1.setTitle("New title");                   //What's this line for?
     int result = t.addSong(s1);
     cout << "result = " << result << endl;
 
@@ -54,6 +54,9 @@ int main(int argc, char *argv[])
     result = t.addSong(s5);
     cout << "add result = " << result << endl;
 
+    t.showSongList();
+    t.shuffle();
+    cout << endl;
     t.showSongList();
 
     result = t.removeSong(s2);
