@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Song::Song(){       //what are we supposed to set here?
+Song::Song(){        //what are we supposed to set here? I set blank strings and null size.
     setArtist("\0");
     setTitle("\0");
     setSize(NULL);

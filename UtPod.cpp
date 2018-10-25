@@ -155,10 +155,11 @@ int UtPod::getNumSongsInUtPod(){
 }
 
 UtPod::~UtPod(){
-    if(songs != NULL){
+    while(songs != NULL){
         SongNode* temp;
         temp = songs;
         songs = temp->next;
         delete(temp);
     }
+    //cout << "All clear" << endl;              //For debugging purposes
 }

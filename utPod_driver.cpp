@@ -14,7 +14,7 @@ You will want to do more complete testing.
 
 */
 //~~~~~~~~~~~~~~~~~~~TO DO LIST~~~~~~~~~~~~~~~~~~~~~\\
-//write functions to sort
+//write sort function
 //need to make a test file
 
 #include <cstdlib>
@@ -99,6 +99,4 @@ int main(int argc, char *argv[])
     t.showSongList();
     cout << "remaining memory = " << t.getRemainingMemory() << endl;
     cout << "current memory = " << t.getTotalMemory() << endl;
-
-
 }
