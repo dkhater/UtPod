@@ -13,6 +13,11 @@ This is a basic driver for the UtPod.
 You will want to do more complete testing.
 
 */
+//~~~~~~~~~~~~~~~~~~~TO DO LIST~~~~~~~~~~~~~~~~~~~~~\\
+//write functions to shuffle and sort
+//fix how we find current memory - traverse with linked list
+//need to make a test file
+
 #include <cstdlib>
 #include <iostream>
 #include "Song.h"
@@ -22,9 +27,10 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    UtPod t;
+    UtPod t(512);
 
     Song s1("Beatles", "Hey Jude1", 4);
+    s1.setTitle("New title");
     int result = t.addSong(s1);
     cout << "result = " << result << endl;
 

@@ -27,14 +27,14 @@ UtPod::UtPod(int size) {
 }
 
 int UtPod::addSong(Song const &s) {
-    if(memSize > 0){
+    if(getRemainingMemory() > s.getSize()){   //get remaining mem must be larger than the song size
         SongNode* temp;
-        temp = (SongNode*)malloc(sizeof(SongNode));
-        temp->s = s;
+        temp = new SongNode(); // like a malloc but declares the pointer
+        temp->s.setSize(s.getSize());
+        temp->s.setTitle(s.getTitle());
+        temp->s.setArtist(s.getArtist());
         temp->next = songs;
         songs = temp;
-        memSize = memSize - s.getSize();
-        cout << memSize<< endl;
         return SUCCESS;
     }
     else{
@@ -49,8 +49,8 @@ int UtPod::removeSong(Song const &s) {
         SongNode* temp;
         temp = songs;
         songs = temp->next;
-        memSize = memSize + s.getSize();                     // Increase memSize
-        free(temp);
+        memSize = memSize + s.getSize();
+        delete(temp);
         return SUCCESS;
     }
     else{
@@ -60,7 +60,7 @@ int UtPod::removeSong(Song const &s) {
 }
 
 void UtPod::shuffle() {
-
+    //mix 500 times
 }
 
 void UtPod::showSongList() {
@@ -82,7 +82,14 @@ void UtPod::sortSongList() {
 }
 
 int UtPod::getRemainingMemory() {
-    return memSize;                 // We changed this
+    int currentmem = 0;
+    SongNode* temp = songs;
+
+    while (songs != NULL){
+        currentmem = currentmem + temp->s.getSize();
+        temp->next;
+    }
+    return 512-currentmem;
 
 }
 
