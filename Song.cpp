@@ -41,13 +41,63 @@ int Song::getSize() const{
     return songSize;
 }
 
-bool Song::operator >(Song const &rhs)
+bool Song::operator >(Song const &rhs)  //May need to transform from current string to all lowercase or all upper
 {
-   // return (handicap < rhs.handicap); //May need to transform from current string to all lowercase or all upper
+    if(this->artist > rhs.artist){
+        return true;
+    }
+    else if(this->artist < rhs.artist){
+        return false;
+    }
+    else if(this->artist == rhs.artist){
+        if(this->title > rhs.title){
+            return true;
+        }
+        else if(this->title < rhs.title){
+            return false;
+        }
+        else if(this->title == rhs.title){
+            if(this->songSize > rhs.songSize){
+                return true;
+            }
+            else if(this->songSize < rhs.songSize){
+                return false;
+            }
+            else
+                cout << "Equal" << endl;                // For debugging purposes
+        }
+
+    }
+
 }
-bool Song::operator <(Song const &rhs)
+bool Song::operator <(Song const &rhs) //May need to transform from current string to all lowercase or all upper
 {
-    //return (handicap < rhs.handicap);
+    if(this->artist < rhs.artist){
+        return true;
+    }
+    else if(this->artist > rhs.artist){
+        return false;
+    }
+    else if(this->artist == rhs.artist){
+        if(this->title < rhs.title){
+            return true;
+        }
+        else if(this->title > rhs.title){
+            return false;
+        }
+        else if(this->title == rhs.title){
+            if(this->songSize < rhs.songSize){
+                return true;
+            }
+            else if(this->songSize > rhs.songSize){
+                return false;
+            }
+            else
+                cout << "Equal" << endl;                // For debugging purposes
+        }
+
+    }
+
 }
 
 bool Song::operator == (Song const &s1)

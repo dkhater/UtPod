@@ -26,9 +26,9 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
+
     UtPod t;    // UtPod t(512)
-
-
+    t.showSongList();
 
     Song s1("Beatles", "Hey Jude1", 4);
     //s1.setTitle("New title");                   //What's this line for?
@@ -45,14 +45,14 @@ int main(int argc, char *argv[])
     cout << "delete result = " << result << endl;
     t.showSongList();
 
-    //result = t.removeSong(s2);
-    //cout << "delete result = " << result << endl;
-    //t.showSongList();
+    result = t.removeSong(s2);
+    cout << "delete result = " << result << endl;
+    t.showSongList();
 
     result = t.removeSong(s1);
     cout << "delete result = " << result << endl;
 
-    //t.showSongList();
+    t.showSongList();
 
     Song s3("Beatles", "Hey Jude3", 6);
     result = t.addSong(s3);

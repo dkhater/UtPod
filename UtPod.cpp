@@ -41,18 +41,21 @@ int UtPod::addSong(Song const &s) {
 }
 
 int UtPod::removeSong(Song const &s) {          // This searches through for a specific song, if equivalent will remove
-    if(getTotalMemory() != MAX_MEMORY){         // This is just deleting the last song put in
+    if(getTotalMemory() != MAX_MEMORY){
         SongNode* current;
-        SongNode* previous;                         // I think we need to search and remove a specific one
+        SongNode* previous;
         previous = songs;
+        if(previous == NULL){                   // Check for empty list
+            return NOT_FOUND;
+        }
         current = previous->next;
-        if(previous->s == s){
+        if(previous->s == s){                   // If first element, change head pointer
             songs = previous->next;
             delete(previous);
             return SUCCESS;
         }
         else {
-            while (current != nullptr) {
+            while (current != nullptr) {        // Otherwise traverse through list
                 if (current->s == s) {
                     previous->next = current->next;
                     delete (current);
@@ -74,7 +77,7 @@ int UtPod::removeSong(Song const &s) {          // This searches through for a s
 
 void UtPod::shuffle() {
     //This shuffles twice the size
-    int shuffleTimes = 2*getNumSongsInUtPod();                  //Changing this number for testing purposes
+    int shuffleTimes = 2*getNumSongsInUtPod();                 //Changing this number for testing purposes
     int ptr1position, ptr2position;
     Song temp;
     SongNode* ptr1 = songs;
@@ -118,7 +121,7 @@ void UtPod::showSongList() {
     }
 }
 
-void UtPod::sortSongList() {
+void UtPod::sortSongList() {        //Check if song overload operators work first
 
 
 }
