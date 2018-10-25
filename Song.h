@@ -37,6 +37,10 @@ class Song
         string getTitle() const;
         int getSize() const;
 
+        bool operator >(Song const &rhs);       //These are the operator overloads
+        bool operator <(Song const &rhs);
+        bool operator ==(Song const &rhs);
+
 };
 
 

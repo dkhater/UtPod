@@ -15,7 +15,6 @@ You will want to do more complete testing.
 */
 //~~~~~~~~~~~~~~~~~~~TO DO LIST~~~~~~~~~~~~~~~~~~~~~\\
 //write functions to sort
-//fix how we find current memory - traverse with linked list
 //need to make a test file
 
 #include <cstdlib>
@@ -29,6 +28,8 @@ int main(int argc, char *argv[])
 {
     UtPod t;    // UtPod t(512)
 
+
+
     Song s1("Beatles", "Hey Jude1", 4);
     //s1.setTitle("New title");                   //What's this line for?
     int result = t.addSong(s1);
@@ -40,7 +41,18 @@ int main(int argc, char *argv[])
     result = t.addSong(s2);
     cout << "result = " << result << endl;
 
+    result = t.removeSong(s1);
+    cout << "delete result = " << result << endl;
     t.showSongList();
+
+    //result = t.removeSong(s2);
+    //cout << "delete result = " << result << endl;
+    //t.showSongList();
+
+    result = t.removeSong(s1);
+    cout << "delete result = " << result << endl;
+
+    //t.showSongList();
 
     Song s3("Beatles", "Hey Jude3", 6);
     result = t.addSong(s3);
@@ -61,6 +73,8 @@ int main(int argc, char *argv[])
 
     result = t.removeSong(s2);
     cout << "delete result = " << result << endl;
+
+    t.showSongList();
 
     result = t.removeSong(s3);
     cout << "delete result = " << result << endl;
@@ -83,7 +97,8 @@ int main(int argc, char *argv[])
     cout << "add result = " << result << endl;
 
     t.showSongList();
-    cout << "memory = " << t.getRemainingMemory() << endl;
+    cout << "remaining memory = " << t.getRemainingMemory() << endl;
+    cout << "current memory = " << t.getTotalMemory() << endl;
 
 
 }

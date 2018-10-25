@@ -9,14 +9,14 @@ using namespace std;
 
 UtPod::UtPod() {
     // set size to default value
-    songs = NULL;
+    songs = nullptr;
     memSize = MAX_MEMORY;
 
 }
 
 UtPod::UtPod(int size) {
     // set size to parameter value
-    songs = NULL;
+    songs = nullptr;
     if(size > MAX_MEMORY || size <= 0)
         memSize = MAX_MEMORY;
     else{
@@ -40,23 +40,41 @@ int UtPod::addSong(Song const &s) {
     }
 }
 
-int UtPod::removeSong(Song const &s) {
-    if(getCurrentMemory() != MAX_MEMORY){       //This is just deleting the last song put in
-        SongNode* temp;                         //I think we need to search and remove a specific one
-        temp = songs;
-        songs = temp->next;
-        delete(temp);
-        return SUCCESS;
+int UtPod::removeSong(Song const &s) {          // This searches through for a specific song, if equivalent will remove
+    if(getTotalMemory() != MAX_MEMORY){         // This is just deleting the last song put in
+        SongNode* current;
+        SongNode* previous;                         // I think we need to search and remove a specific one
+        previous = songs;
+        current = previous->next;
+        if(previous->s == s){
+            songs = previous->next;
+            delete(previous);
+            return SUCCESS;
+        }
+        else {
+            while (current != nullptr) {
+                if (current->s == s) {
+                    previous->next = current->next;
+                    delete (current);
+                    return SUCCESS;
+                } else {
+                    previous = current;
+                    current = current->next;
+                }
+            }
+            return NOT_FOUND;
+        }
+
     }
     else{
-        return NOT_FOUND;
+        return NOT_FOUND;                       // What should we return if the linked list is empty?
     }
 
 }
 
 void UtPod::shuffle() {
-    //mix 500 times
-    int shuffleTimes = 10;                  //Changing this number for testing purposes
+    //This shuffles twice the size
+    int shuffleTimes = 2*getNumSongsInUtPod();                  //Changing this number for testing purposes
     int ptr1position, ptr2position;
     Song temp;
     SongNode* ptr1 = songs;
@@ -78,23 +96,22 @@ void UtPod::shuffle() {
             ptr2 = ptr2->next;
         }
 
-
         temp = ptr1->s;         //Swap two songs
         ptr1->s = ptr2->s;
         ptr2->s = temp;
 
         shuffleTimes--;
     }
-
-
 }
 
 void UtPod::showSongList() {
-    if(songs == NULL)
+    if(songs == nullptr) {
+        cout << "Song list is empty!" << endl;
         return;
+    }
     else{
         SongNode* ptr = songs;
-        while(ptr != NULL){
+        while(ptr != nullptr){
             cout << ptr->s.getArtist()<< ", " << ptr->s.getTitle() << endl;
             ptr = ptr->next;
         }
@@ -103,15 +120,16 @@ void UtPod::showSongList() {
 
 void UtPod::sortSongList() {
 
+
 }
 
 int UtPod::getRemainingMemory() {
-    int currentMem = getCurrentMemory();
+    int currentMem = getTotalMemory();
     return MAX_MEMORY-currentMem;
 
 }
 
-int UtPod::getCurrentMemory(){
+int UtPod::getTotalMemory(){
      memSize = 0;
      SongNode* temp;
      temp = songs;
