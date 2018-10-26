@@ -1,3 +1,5 @@
+//Utpod.cpp
+
 #include <cstdlib>
 #include <iostream>
 #include <ctime>
@@ -110,7 +112,6 @@ void UtPod::shuffle() {
 void UtPod::showSongList() {
     if(songs == nullptr) {
         cout << "Song list is empty!" << endl;
-        return;
     }
     else{
         SongNode* ptr = songs;
@@ -119,6 +120,8 @@ void UtPod::showSongList() {
             ptr = ptr->next;
         }
     }
+    cout << endl;
+    return;
 }
 
 void UtPod::sortSongList() {        //Check if song overload operators work first
@@ -133,14 +136,14 @@ int UtPod::getRemainingMemory() {
 }
 
 int UtPod::getTotalMemory(){
-     memSize = 0;
-     SongNode* temp;
-     temp = songs;
-     while (temp != NULL){
-         memSize = memSize + temp->s.getSize();
-         temp = temp->next;
-     }
-     return memSize;
+    memSize = 0;
+    SongNode* temp;
+    temp = songs;
+    while (temp != NULL){
+        memSize = memSize + temp->s.getSize();
+        temp = temp->next;
+    }
+    return memSize;
 }
 
 int UtPod::getNumSongsInUtPod(){
