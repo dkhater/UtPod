@@ -19,84 +19,167 @@ You will want to do more complete testing.
 
 #include <cstdlib>
 #include <iostream>
+#include <fstream>
+#include <string>
 #include "Song.h"
 #include "UtPod.h"
 
 using namespace std;
 
-int main(int argc, char *argv[])
-{
+enum cmd_code {
+    Add,
+    Remove,
+    Shuffle,
+    Show,
+    Sort,
+    Blank
+};
 
-    UtPod t;    // UtPod t(512)
-    t.showSongList();
+cmd_code changeit (std::string const& inCmd){
+    if (inCmd == "Add") return Add;
+    else if (inCmd == "Remove") return Remove;
+    else if (inCmd == "Shuffle") return Shuffle;
+    else if (inCmd == "Show") return Show;
+    else if (inCmd == "Sort") return Sort;
+    else return Blank;
+}
+int main(int argc, char *argv[]) {
+    UtPod t;
+    string cmd;
+    ifstream myfile;
+    myfile.open(argv[1]);
 
-    Song s1("Beatles", "Hey Jude1", 4);
-    //s1.setTitle("New title");                   //What's this line for?
-    int result = t.addSong(s1);
-    cout << "result = " << result << endl;
+        if (myfile.is_open()){
 
-    t.showSongList();
+            while (getline (myfile,cmd)) {
+                string artist, title, Size;
+                int size;
+                Song s;
+                switch (changeit(cmd)) {
+                    case Add:
+                        getline(myfile, artist);
+                        getline(myfile, title);
+                        getline(myfile, Size);
+                        size = atoi(Size.c_str());
+                        s = Song (artist, title, size);
+                        t.addSong(s);
+                        break;
 
-    Song s2("Beatles", "Hey Jude2", 5);
-    result = t.addSong(s2);
-    cout << "result = " << result << endl;
+                    case Remove:
+                        getline(myfile, artist);
+                        getline(myfile, title);
+                        getline(myfile, Size);
+                        size = atoi(Size.c_str());
+                        s = Song (artist, title, size);
+                        t.removeSong(s);
+                        break;
 
-    result = t.removeSong(s1);
-    cout << "delete result = " << result << endl;
-    t.showSongList();
+                    case Shuffle:
+                        t.shuffle();
+                        break;
 
-    result = t.removeSong(s2);
-    cout << "delete result = " << result << endl;
-    t.showSongList();
+                    case Show:
+                        t.showSongList();
+                        break;
 
-    result = t.removeSong(s1);
-    cout << "delete result = " << result << endl;
+                    case Sort:
+                        t.sortSongList();
+                        break;
+                    default:
+                        break;
+                }
+            }
 
-    t.showSongList();
+        }
+        else cout << "Unable to Open File";
 
-    Song s3("Beatles", "Hey Jude3", 6);
-    result = t.addSong(s3);
-    cout << "result = " << result << endl;
+        myfile.close();
 
-    Song s4("Beatles", "Hey Jude4", 7);
-    result = t.addSong(s4);
-    cout << "result = " << result << endl;
-
-    Song s5("Beatles", "Hey Jude5", 241);
-    result = t.addSong(s5);
-    cout << "add result = " << result << endl;
-
-    t.showSongList();
-    t.shuffle();
-    cout << endl;
-    t.showSongList();
-
-    result = t.removeSong(s2);
-    cout << "delete result = " << result << endl;
-
-    t.showSongList();
-
-    result = t.removeSong(s3);
-    cout << "delete result = " << result << endl;
-
-    t.showSongList();
-
-    result = t.removeSong(s1);
-    cout << "delete result = " << result << endl;
-
-    result = t.removeSong(s5);
-    cout << "delete result = " << result << endl;
-
-    result = t.removeSong(s4);
-    cout << "delete result = " << result << endl;
+        return 0;
 
 
-    t.showSongList();
 
-    result = t.addSong(s5);
-    cout << "add result = " << result << endl;
 
-    t.showSongList();
-    cout << "remaining memory = " << t.getRemainingMemory() << endl;
-    cout << "current memory = " << t.getTotalMemory() << endl;
+
+
+/*
+int main(int argc, char *argv[]) {
+
+
+            UtPod t;    // UtPod t(512)
+
+            t.showSongList();
+
+            Song s1("Beatles", "Hey Jude1", 4);
+            //s1.setTitle("New title");                   //What's this line for?
+            int result = t.addSong(s1);
+            cout << "result = " << result << endl;
+
+            t.showSongList();
+
+            Song s2("Beatles", "Hey Jude2", 5);
+            result = t.addSong(s2);
+            cout << "result = " << result << endl;
+
+            result = t.removeSong(s1);
+            cout << "delete result = " << result << endl;
+            t.showSongList();
+
+            result = t.removeSong(s2);
+            cout << "delete result = " << result << endl;
+            t.showSongList();
+
+            result = t.removeSong(s1);
+            cout << "delete result = " << result << endl;
+
+            t.showSongList();
+
+            Song s3("Beatles", "Hey Jude3", 6);
+            result = t.addSong(s3);
+            cout << "result = " << result << endl;
+
+            Song s4("Beatles", "Hey Jude4", 7);
+            result = t.addSong(s4);
+            cout << "result = " << result << endl;
+
+            Song s5("Beatles", "Hey Jude5", 241);
+            result = t.addSong(s5);
+            cout << "add result = " << result << endl;
+
+            t.showSongList();
+            t.shuffle();
+            cout << endl;
+            t.showSongList();
+
+            result = t.removeSong(s2);
+            cout << "delete result = " << result << endl;
+
+            t.showSongList();
+
+            result = t.removeSong(s3);
+            cout << "delete result = " << result << endl;
+
+            t.showSongList();
+
+            result = t.removeSong(s1);
+            cout << "delete result = " << result << endl;
+
+            result = t.removeSong(s5);
+            cout << "delete result = " << result << endl;
+
+            result = t.removeSong(s4);
+            cout << "delete result = " << result << endl;
+
+
+            t.showSongList();
+
+            result = t.addSong(s5);
+            cout << "add result = " << result << endl;
+
+            t.showSongList();
+            cout << "remaining memory = " << t.getRemainingMemory() << endl;
+            cout << "current memory = " << t.getTotalMemory() << endl;
+
+*/
+
 }
