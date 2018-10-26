@@ -1,0 +1,44 @@
+Show
+
+Add
+Beatles
+Hey Jude1
+5
+Show
+
+Add
+Beatles
+Hey Jude2
+5
+Show
+
+Add
+Beatles
+Hey Jude3
+5
+Show
+
+Add
+Beatles
+Hey Jude4
+5
+Show
+
+Shuffle
+
+Show
+
+Remove
+Beatles
+Hey Jude1
+5
+Show
+
+Remove
+Beatles
+Hey Jude2
+5
+Show
+
+
+

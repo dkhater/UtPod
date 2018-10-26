@@ -110,7 +110,6 @@ void UtPod::shuffle() {
 void UtPod::showSongList() {
     if(songs == nullptr) {
         cout << "Song list is empty!" << endl;
-        return;
     }
     else{
         SongNode* ptr = songs;
@@ -119,6 +118,8 @@ void UtPod::showSongList() {
             ptr = ptr->next;
         }
     }
+    cout << endl;
+    return;
 }
 
 void UtPod::sortSongList() {        //Check if song overload operators work first
