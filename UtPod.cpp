@@ -81,7 +81,6 @@ void UtPod::shuffle() {
     //This shuffles twice the size
     int shuffleTimes = 2*getNumSongsInUtPod();                 //Changing this number for testing purposes
     int ptr1position, ptr2position;
-    Song temp;
     SongNode* ptr1 = songs;
     SongNode* ptr2 = songs;
     unsigned int currentTime = (unsigned)time(0);
@@ -101,9 +100,7 @@ void UtPod::shuffle() {
             ptr2 = ptr2->next;
         }
 
-        temp = ptr1->s;         //Swap two songs
-        ptr1->s = ptr2->s;
-        ptr2->s = temp;
+        swapSongs(ptr1,ptr2);
 
         shuffleTimes--;
     }
@@ -124,8 +121,32 @@ void UtPod::showSongList() {
     return;
 }
 
-void UtPod::sortSongList() {        //Check if song overload operators work first
+void UtPod::swapSongs(SongNode* ptr1, SongNode* ptr2){
+    Song temp;
+    temp = ptr1->s;         //Swap two songs
+    ptr1->s = ptr2->s;
+    ptr2->s = temp;
 
+}
+
+void UtPod::sortSongList() {                     // Check if song overload operators work first - they do work.
+    SongNode* sortedPtr = songs;
+    SongNode* lowest;
+    SongNode* checkPtr;
+                                                 // Separate the sorted/unsorted parts of the list
+    while(sortedPtr != nullptr){
+        lowest = sortedPtr;                      // Set lowest as the first node
+        checkPtr = sortedPtr->next;              // Check from second to last node
+        while(checkPtr != nullptr){              // Find the lowest of the rest of the song list
+            if(checkPtr->s < lowest->s){         // If lower than current lowest, replace lowest
+                lowest = checkPtr;
+                //cout << "lowest so far is:" << lowest->s.getArtist()<< ", " << lowest->s.getTitle() << endl;
+            }
+            checkPtr = checkPtr->next;           // check next node until null (end of list)
+        }
+        swapSongs(sortedPtr,lowest);                // Swap current w/ lowest
+        sortedPtr = sortedPtr->next;             // Move to next position
+    }
 
 }
 

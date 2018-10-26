@@ -3,7 +3,7 @@ Show
 Add
 Beatles
 Hey Jude1
-5
+250
 Show
 
 Add
@@ -28,9 +28,13 @@ Shuffle
 
 Show
 
+Sort
+
+Show
+
 Remove
 Beatles
-Hey Jude1
+Hey Jude3
 5
 Show
 

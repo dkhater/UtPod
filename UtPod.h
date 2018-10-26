@@ -37,6 +37,8 @@ private:
 
     int memSize;
 
+    void swapSongs(SongNode* ptr1, SongNode* ptr2);
+
 public:
     UtPod();
     UtPod(int size);
